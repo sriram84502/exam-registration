@@ -36,21 +36,39 @@ function displayUsers() {
 }
 
 function add() {
-    const randomIndianCity = getRandomIndianCity();
-    let user = {
-        name: name1.value,
-        email: email.value,
-        city: randomIndianCity      
-    }
-    let checkuser = users.filter((useri) => {
-        return user.email == useri.email;
-    });
-    if(checkuser.length == 0){
-        users.push(user);
+    if(name1.value=='' || email.value==''){
+        alert("Please fill all the fields");
+        if(users.length == 0){
+            results.classList.add('d-none');
+        }
+        else{
+            results.classList.remove('d-none');
+        }
     }
     else{
-        alert('user already registered');
-    }
-    displayUsers();
-    console.log(users);
+        results.classList.remove('d-none');
+        const randomIndianCity = getRandomIndianCity();
+        let user = {
+            name: name1.value,
+            email: email.value,
+            city: randomIndianCity      
+        }
+        let checkuser = users.filter((useri) => {
+            return user.email == useri.email;
+        });
+        if(checkuser.length == 0){
+            users.push(user);
+        }
+        else{
+            alert('user already registered');
+        }
+        displayUsers();
+        console.log(users);
+        }
+}
+
+const results = document.getElementById('res');
+
+if(users.length == 0){
+    results.classList.add('d-none');
 }

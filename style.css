@@ -8,6 +8,10 @@ body{
     text-align: center;
 }
 
+.d-none{
+    display: none;
+}
+
 .inputs{
     gap: 10px;
     display: flex;
