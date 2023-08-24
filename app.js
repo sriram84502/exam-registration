@@ -65,6 +65,8 @@ function add() {
         displayUsers();
         console.log(users);
         }
+        name1.value = '';
+        email.value = '';
 }
 
 const results = document.getElementById('res');
