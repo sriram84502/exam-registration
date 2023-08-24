@@ -57,17 +57,10 @@ body{
 
 .card{
     align-items: center;
-    display: flex;
-    gap: 12px;
     background-color: white;
     padding: 6px 12px;
     border-radius: 12px;
     margin-bottom: 12px;
-}
-
-.details{
-    display: flex;
-    gap: 10px;
 }
 
 .nameo{
