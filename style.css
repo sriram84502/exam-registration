@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 420px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.inputs{
+    gap: 10px;
+    display: flex;
+}
+
+img{
+    height: 50px;
+}
+
+input{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid royalblue;
+}
+
+.submit{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+}
+
+.results{
+    width: 400px;
+    height: 100vh;
+    background-color: antiquewhite;
+    padding: 12px;
+    overflow: scroll;
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+}
+
+.nameo{
+    margin: 0;
+}
+
+.emailo{
+    margin: 0;
+}
+
+.center{
+    margin: 0;
+}
+
+img{
+    height: 24px;
+}

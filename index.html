@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="exam.png">
+        <h1>Exam Registration</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis quod quidem?</p>
+        <div class="inputs">
+            <input type="text" class="name" id="name" placeholder="Enter Name">
+            <input type="text" class="email" id="email" placeholder="Enter Email">
+        </div>
+        <button class="submit" onclick="add()">Register</button>
+    </div>
+    <div class="results" id="results">
+        <div class="card" id="card">
+            <img width="24" height="20" src="https://img.icons8.com/material-sharp/24/user.png" alt="user" style="height: 24px;"/>
+            <div class="det">
+                <div class="details" id="details">
+                    <p class="nameo" id="name">Name</p>
+                    <p class="emailo" id="email">Email</p>
+                </div>
+                <p class="center" id="center">center</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
